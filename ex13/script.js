@@ -6,7 +6,7 @@ function tabuada(){
   let i = 1;
   
   while (i <= 100) {
-    result.innerHTML = (num + " x " + i + " = " + (num * i) + "</br>");
+    result.innerHTML += (num + " x " + i + " = " + (num * i) + "</br>");
     i++;
   }
 }
