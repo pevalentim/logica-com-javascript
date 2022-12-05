@@ -1,4 +1,4 @@
-document.querySelector("#btn").addEventListener("click", tabuada)
+document.querySelector("#btn").addEventListener("click", tabuada);
 
 function tabuada(){
   const num = parseFloat(document.querySelector("#num").value);
@@ -7,6 +7,11 @@ function tabuada(){
   
   while (i <= 100) {
     result.innerHTML += (num + " x " + i + " = " + (num * i) + "</br>");
+
+    if((i % 10) === 0){
+      result.innerHTML += "<hr>";
+    }
+
     i++;
   }
 }
