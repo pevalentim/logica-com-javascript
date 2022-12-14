@@ -5,7 +5,11 @@ function calc(){
   let y = 1004;
   
   while (y <= 2024) {
+    if(((y % 100) > 0) || ((y % 400) === 0)){
     result.innerHTML += y + "<br>" ;
-    y += 4;
+  } else {
+    result.innerHTML += "" ;
+  }
+  y += 4;
   }
 };
